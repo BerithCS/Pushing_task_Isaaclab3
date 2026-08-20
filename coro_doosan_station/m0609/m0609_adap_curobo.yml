@@ -1,0 +1,223 @@
+robot_cfg:
+  kinematics:
+    urdf_path: "/home/berith/Documents/Pushing_task/coro_doosan_station/m0609/m0609_adap.blue.urdf"
+    asset_root_path: "/home/berith/Documents/Pushing_task/coro_doosan_station"
+    base_link: "base_link"
+    ee_link: "tool_tip"                    
+
+    collision_link_names:
+      - "base_link"
+      - "link_1"
+      - "link_2"
+      - "link_3"
+      - "link_4"
+      - "link_5"
+      #- "link_6"
+      #- "adapter"                          
+
+    collision_spheres:
+      base_link:
+        - center: [0.0, 0.0, 0.041]
+          radius: 0.07
+        - center: [-0.064, 0.069, 0.019]
+          radius: 0.03
+        - center: [-0.062, 0.0, 0.019]
+          radius: 0.03
+        - center: [-0.061, 0.033, 0.014]
+          radius: 0.03
+        - center: [0.0, -0.075, 0.025]
+          radius: 0.03
+        - center: [-0.075, -0.062, 0.024]
+          radius: 0.03
+        - center: [-0.07, -0.034, 0.019]
+          radius: 0.03
+        - center: [-0.019, 0.063, 0.021]
+          radius: 0.03
+        - center: [0.028, 0.067, 0.018]
+          radius: 0.03
+        - center: [0.077, 0.072, 0.025]
+          radius: 0.03
+        - center: [0.076, 0.02, 0.025]
+          radius: 0.03
+        - center: [0.046, -0.07, 0.016]
+          radius: 0.03
+        - center: [0.062, -0.026, 0.018]
+          radius: 0.03
+      link_1:
+        - center: [0.0, 0.0, 0.0]
+          radius: 0.09
+        - center: [0.0, 0.0, 0.037]
+          radius: 0.09
+        - center: [0.0, 0.03, 0.0]
+          radius: 0.09
+      link_2:
+        - center: [0.0, 0.0, 0.195]
+          radius: 0.09
+        - center: [0.047, 0.0, 0.164]
+          radius: 0.09
+        - center: [0.174, -0.0, 0.158]
+          radius: 0.07
+        - center: [0.35, 0.004, 0.166]
+          radius: 0.07
+        - center: [0.401, 0.0, 0.219]
+          radius: 0.07
+        - center: [0.41, 0.0, 0.164]
+          radius: 0.09
+        - center: [0.259, -0.0, 0.16]
+          radius: 0.06
+      link_3:
+        - center: [0.0, 0.0, 0.042]
+          radius: 0.08
+        - center: [0.0, 0.027, 0.0]
+          radius: 0.08
+        - center: [0.0, -0.034, 0.0]
+          radius: 0.08
+      link_4:
+        - center: [0.0, 0.197, 0.0]
+          radius: 0.06
+        - center: [0.0, 0.149, -0.008]
+          radius: 0.07
+        - center: [0.0, 0.148, -0.011]
+          radius: 0.08
+        - center: [0.0, 0.14, -0.102]
+          radius: 0.05
+        - center: [0.0, 0.101, -0.156]
+          radius: 0.05
+        - center: [0.004, 0.057, -0.194]
+          radius: 0.05
+        - center: [0.003, 0.02, -0.245]
+          radius: 0.05
+        - center: [0.0, 0.007, -0.267]
+          radius: 0.06
+      link_5:
+        - center: [0.0, -0.026, 0.0]
+          radius: 0.06
+        - center: [0.0, 0.055, 0.0]
+          radius: 0.06
+        - center: [0.0, 0.0, 0.0]
+          radius: 0.07
+        - center: [0.0, 0.0, 0.052]
+          radius: 0.06
+      link_6:
+        - center: [0.0, 0.013, -0.032]
+          radius: 0.03
+        - center: [0.0, -0.015, -0.035]
+          radius: 0.03
+        - center: [-0.016, 0.0, -0.038]
+          radius: 0.03
+        - center: [0.016, 0.0, -0.03]
+          radius: 0.03
+        - center: [-0.016, 0.0, -0.027]
+          radius: 0.03
+
+      # ── ADAPTER spheres from your XRDF ──────────────────────
+      adapter:
+        - center: [0.009, 0.003, 0.042]
+          radius: 0.004
+        - center: [0.033, 0.004, 0.009]
+          radius: 0.004
+        - center: [0.014, 0.004, 0.054]
+          radius: 0.004
+        - center: [0.01, 0.004, 0.028]
+          radius: 0.004
+        - center: [0.02, 0.004, 0.015]
+          radius: 0.004
+        - center: [0.049, 0.004, 0.011]
+          radius: 0.004
+        - center: [0.06, 0.004, 0.02]
+          radius: 0.004
+        - center: [0.03, 0.004, 0.065]
+          radius: 0.004
+        - center: [0.043, 0.004, 0.066]
+          radius: 0.004
+        - center: [0.066, 0.004, 0.035]
+          radius: 0.004
+        - center: [0.064, 0.004, 0.047]
+          radius: 0.004
+        - center: [0.056, 0.004, 0.06]
+          radius: 0.004
+        - center: [0.045, 0.098, 0.023]
+          radius: 0.004
+        - center: [0.045, 0.098, 0.035]
+          radius: 0.004
+        - center: [0.045, 0.098, 0.052]
+          radius: 0.004
+        - center: [0.044, 0.018, 0.022]
+          radius: 0.004
+        - center: [0.045, 0.018, 0.033]
+          radius: 0.004
+        - center: [0.045, 0.018, 0.049]
+          radius: 0.004
+        - center: [0.045, 0.049, 0.051]
+          radius: 0.004
+        - center: [0.045, 0.049, 0.024]
+          radius: 0.004
+        - center: [0.045, 0.049, 0.037]
+          radius: 0.004
+        - center: [0.045, 0.079, 0.025]
+          radius: 0.004
+        - center: [0.045, 0.079, 0.036]
+          radius: 0.004
+        - center: [0.045, 0.079, 0.052]
+          radius: 0.004
+
+
+    collision_sphere_buffer: 0.0
+    extra_collision_spheres: {}
+
+    self_collision_ignore:
+      base_link: ["link_1"]
+      link_1: ["link_2"]
+      link_2: ["link_3"]
+      link_3: ["link_4"]
+      link_4: ["link_5"]
+      link_5: ["link_6"]
+      link_6: ["adapter"]               
+      adapter: ["tool_tip"]            
+
+    self_collision_buffer: {}
+
+    cspace:
+      joint_names:
+        - "joint_1"
+        - "joint_2"
+        - "joint_3"
+        - "joint_4"
+        - "joint_5"
+        - "joint_6"
+      retract_config:
+        - 0.0
+        - 0.0
+        - 0.0
+        - 0.0
+        - 0.0
+        - 0.0
+      null_space_weight:
+        - 1.0
+        - 1.0
+        - 1.0
+        - 1.0
+        - 1.0
+        - 1.0
+      cspace_distance_weight:
+        - 1.0
+        - 1.0
+        - 1.0
+        - 1.0
+        - 1.0
+        - 1.0
+      max_acceleration:
+        - 10.0
+        - 10.0
+        - 10.0
+        - 10.0
+        - 10.0
+        - 10.0
+      max_jerk:
+        - 10000.0
+        - 10000.0
+        - 10000.0
+        - 10000.0
+        - 10000.0
+        - 10000.0
+

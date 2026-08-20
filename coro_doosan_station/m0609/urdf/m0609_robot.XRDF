@@ -1,0 +1,45 @@
+format: "xrdf"
+
+format_version: 1.0
+
+default_joint_positions: 
+  joint_1: -0.0
+  joint_2: 0.0
+  joint_3: -0.0
+  joint_4: -0.0
+  joint_5: -0.0
+  joint_6: -0.0
+
+cspace: 
+  joint_names: 
+    - "joint_1"
+    - "joint_2"
+    - "joint_3"
+    - "joint_4"
+    - "joint_5"
+    - "joint_6"
+  acceleration_limits: [10, 10, 10, 10, 10, 10]
+  jerk_limits: [10000, 10000, 10000, 10000, 10000, 10000]
+
+collision: 
+  geometry: "auto_generated_collision_sphere_group"
+
+self_collision: 
+  geometry: "auto_generated_collision_sphere_group"
+  ignore: 
+    base_link: 
+      - "link_1"
+    link_1: 
+      - "link_2"
+    link_2: 
+      - "link_3"
+    link_3: 
+      - "link_4"
+    link_4: 
+      - "link_5"
+    link_5: 
+      - "link_6"
+
+geometry: 
+  auto_generated_collision_sphere_group: 
+    spheres: 
