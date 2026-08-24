@@ -349,4 +349,3 @@ yarl==1.18.3
 yourdfpy==0.0.60
 zipp==4.1.0
 zstandard==0.25.0
-[INFO] Using Python: "/home/berith/isaac-lab-3/env_isaaclab/bin/python"
